@@ -1,0 +1,562 @@
+{% extends "Patient/base.html" %}
+
+{% block content %}
+
+	<style type="text/css">
+  .mainContainer .leftSection .formContainer .container .custyle .table{
+      display: block;
+        //overflow-x: auto;
+        //overflow:hidden;
+        overflow-y: auto;
+        height:300px;
+        
+        white-space: nowrap;
+
+    }
+    #prescriptionViewTabel{
+      display: block;
+        //overflow-x: auto;
+        //overflow:hidden;
+        overflow-y: auto;
+        height:300px;
+        white-space: nowrap;
+
+    }
+
+		.nav-side-menu {
+  overflow: auto;
+  font-family: verdana;
+  font-size: 12px;
+  font-weight: 200;
+  background-color: #2e353d;
+  position: fixed;
+  top: 0px;
+  width: 300px;
+  height: 100%;
+  color: #e1ffff;
+}
+.nav-side-menu .brand {
+  background-color: #23282e;
+  line-height: 50px;
+  display: block;
+  text-align: center;
+  font-size: 14px;
+}
+.nav-side-menu .toggle-btn {
+  display: none;
+}
+.nav-side-menu ul,
+.nav-side-menu li {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  line-height: 35px;
+  cursor: pointer;
+  /*    
+    .collapsed{
+       .arrow:before{
+                 font-family: FontAwesome;
+                 content: "\f053";
+                 display: inline-block;
+                 padding-left:10px;
+                 padding-right: 10px;
+                 vertical-align: middle;
+                 float:right;
+            }
+     }
+*/
+}
+.nav-side-menu ul :not(collapsed) .arrow:before,
+.nav-side-menu li :not(collapsed) .arrow:before {
+  font-family: FontAwesome;
+  content: "\f078";
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+  vertical-align: middle;
+  float: right;
+}
+.nav-side-menu ul .active,
+.nav-side-menu li .active {
+  border-left: 3px solid #d19b3d;
+  background-color: #4f5b69;
+}
+.nav-side-menu ul .sub-menu li.active,
+.nav-side-menu li .sub-menu li.active {
+  color: #d19b3d;
+}
+.nav-side-menu ul .sub-menu li.active a,
+.nav-side-menu li .sub-menu li.active a {
+  color: #d19b3d;
+}
+.nav-side-menu ul .sub-menu li,
+.nav-side-menu li .sub-menu li {
+  background-color: #181c20;
+  border: none;
+  line-height: 28px;
+  border-bottom: 1px solid #23282e;
+  margin-left: 0px;
+}
+.nav-side-menu ul .sub-menu li:hover,
+.nav-side-menu li .sub-menu li:hover {
+  background-color: #020203;
+}
+.nav-side-menu ul .sub-menu li:before,
+.nav-side-menu li .sub-menu li:before {
+  font-family: FontAwesome;
+  content: "\f105";
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+  vertical-align: middle;
+}
+.nav-side-menu li {
+  padding-left: 10px;
+  border-left: 3px solid #2e353d;
+  border-bottom: 1px solid #23282e;
+}
+.nav-side-menu ul a {
+  text-decoration: none;
+  color: #e1ffff;
+}
+.nav-side-menu li a i {
+  padding-left: 10px;
+  width: 20px;
+  padding-right: 20px;
+}
+.nav-side-menu li:hover {
+  border-left: 3px solid #d19b3d;
+  background-color: #4f5b69;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.head{
+
+	overflow: hidden;
+	background-color: currentColor;
+	//position: fixed;
+	width: 100%;
+	height: 50px;
+	//margin-left: 300px;
+}
+.header-right{
+	float: right;
+}
+#logoutButton{
+  height: 50px;
+}
+.headDropdown{
+	color: #EEE;
+    background: transparent;
+	width: 152px;
+	height: 49px;
+}
+.headDropdown option {
+    margin: 40px;
+    background: #2e353d;
+    color: #fff;
+
+}
+.mainContainer{
+  background: transparent;
+  
+  margin-left: 300px;
+}
+.formContainer{
+  background: ;
+  float: left;
+  //box-shadow: 0 9px 9px silver;
+  margin: 0 auto;
+  padding-bottom: 33px;
+  padding-top: 5px;
+  width: 500px;
+
+}
+.custab{
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin: 5% 0;
+    box-shadow: 3px 3px 2px #ccc;
+    transition: 0.5s;
+    
+    }
+.custab:hover{
+    box-shadow: 3px 3px 0px transparent;
+    transition: 0.5s;
+    }
+    .container{
+      background: transparent;
+    }
+    
+    .rightSection{
+      background: ;
+      float: right;
+      width: 545px;
+      height: 366px;
+      margin: 0 auto;
+      padding: 9px;
+    }
+    .rightSection .container{
+      background: ;
+      //box-shadow: 0 9px 9px silver;
+    }
+@media (max-width: 767px) {
+  .nav-side-menu {
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .nav-side-menu .toggle-btn {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 10 !important;
+    padding: 3px;
+    background-color: #ffffff;
+    color: #000;
+    width: 40px;
+    text-align: center;
+  }
+  .brand {
+    text-align: left !important;
+    font-size: 22px;
+    padding-left: 20px;
+    line-height: 50px !important;
+  }
+  .mainContainer{
+    margin-left: 0px;
+  }
+}
+@media (min-width: 767px) {
+  .nav-side-menu .menu-list .menu-content {
+    display: block;
+  }
+}
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+	</style>
+
+	<link href="bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
+<!------ Include the above in your HEAD tag ---------->
+
+<link href="font-awesome.min.css" rel="stylesheet">
+
+<div class="pageContainer">
+    <div class="head">
+  <div class="header-right">
+
+    {% comment %} <select class="headDropdown">
+      <a href="#">NNN</a>
+    <option><a href="https://www.google.com">Logout</a></option>
+    <option>Change Password</option>
+  </select> {% endcomment %}
+  <a href="{% url 'logout' %}"  id="logoutButton" class="btn btn-danger btn-lg">Logout</a>
+  </div>
+  
+</div>
+<div class="nav-side-menu">
+    <div class="brand">E Prescription</div>
+    <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+  
+        <div class="menu-list">
+  
+            <ul id="menu-content" class="menu-content collapse out">
+                <li class="">
+                  <a href="#">
+                  <i class="fa fa-dashboard fa-lg"></i> Dashboard
+                  </a>
+                </li>
+
+                <a href="{% url 'getPrescriptionReportPage' %}">
+                  <li data-toggle="collapse" data-target="#service" class="collapsed">
+                  <i class="fa fa-user fa-lg"></i> Reports
+                </li> 
+                </a>
+                <a href="#">
+                  <li data-toggle="collapse" data-target="#service" class="collapsed active">
+                  <i class="fa fa-user fa-lg"></i> Prescription 
+                </li> 
+                </a>                   
+            </ul>
+     </div>
+</div>
+
+<div class="mainContainer">
+  
+  <div class="leftSection">
+      
+      <div class="formContainer">
+    
+      <div class="container">
+        
+    
+    <div class="row col-md-13 col-md-offset-5 custyle"">
+
+    <table class="table table-striped custab" id="prescriptionListTabel">
+    <thead>
+    
+    <h4>Prescription List</h4>
+        <tr>
+            <th>Patient Name</th>
+            <th>Date</th>
+            <th>Doctor Name</th>
+            <th class="text-center">Action</th>
+        </tr>
+    </thead>
+            {% comment %} <tr>
+                <td>X</td>
+                <td>1/1/19</td>
+                <td>A</td>
+                <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-edit"></span> View</a></td>
+            </tr>
+            <tr>
+                <td>Y</td>
+                <td>1/1/19</td>
+                <td>B</td>
+                <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-edit"></span> View</a></td>
+            </tr>
+            <tr>
+                <td>Z</td>
+                <td>1/1/19</td>
+                <td>C</td>
+                <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-edit"></span> View</a></td>
+            </tr> {% endcomment %}
+    </table>
+    </div>
+</div>
+</div>
+  </div>
+  <div class="rightSection">
+
+
+            <div class="">
+            
+              <div class="container">
+            <div class="row col-md-12 col-md-offset-5 custyle">
+            <table class="table table-striped custab" id="prescriptionViewTabel">
+            <thead>
+            <!-- <a href="#" class="btn btn-primary btn-xs pull-right"><b>+</b> Add new categories</a> -->
+            <h4>Prescription Medicine</h4>
+                <tr>
+                    <th>Medicine</th>
+                    <th>Frequency</th>
+                    <th>Duration</th>
+                    <th class="text-center">Action</th>
+                </tr>
+            </thead>
+                    {% comment %} <tr>
+                        <td>X</td>
+                        <td>1/1/19</td>
+                        <td>A</td>
+                        <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-edit"></span> Details</a></td>
+                    </tr>
+                    <tr>
+                        <td>Y</td>
+                        <td>1/1/19</td>
+                        <td>B</td>
+                        <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-edit"></span> Deteils</a></td>
+                    </tr>
+                    <tr>
+                        <td>Z</td>
+                        <td>1/1/19</td>
+                        <td>C</td>
+                        <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-edit"></span> Details</a></td>
+                    </tr> {% endcomment %}
+            </table>
+            </div>
+        </div>
+        </div>
+      
+        <div class="container mb-5 mt-5">
+            <div class="pricing card-deck flex-column flex-md-row mb-3">
+                <div class="card card-pricing text-center px-3 mb-4">
+                    <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Details</span>
+                    <div class="bg-transparent card-header pt-4 border-0">
+                        <h5 class="h5 font-weight-normal text-primary text-left mb-0">Medicine Name: <span></span></h5><hr>
+                        <h5 class="h5 font-weight-normal text-primary text-left mb-0">Medicine Type: <span></span></h5><hr>
+                        <h5 class="h5 font-weight-normal text-primary text-left mb-0">Medicine Comapny: <span></span></h5><hr>
+
+                        <h5 class="h5 font-weight-normal text-primary text-left mb-0">Frequency: <span></span></h5><hr>
+                        <h5 class="h5 font-weight-normal text-primary text-left mb-0">Frequency Quantity: <span></span></h5><hr>
+                        <h5 class="h5 font-weight-normal text-primary text-left mb-0">Duration: <span></span></h5><hr>
+                        <h5 class="h5 font-weight-normal text-primary text-left mb-0">Taken: <span></span></h5>
+                    </div>
+                  <div class="card-body pt-0">
+                        <ul class="list-unstyled mb-4">
+                            
+                        </ul>
+                        <!-- <button type="button" class="btn btn-outline-secondary mb-3"></button> -->
+                  </div>
+                </div>
+            </div>
+        </div>
+        
+        
+       
+</div>
+
+  </div>
+  
+
+</div>
+ </div>
+    <script>
+
+    {% comment %} var prescriptionObject={
+      prescriptionId:null,
+      prescriptionPatientName:null,
+      prescriptionIssueDate:null,
+      prescriptionDoctorName:null,
+      
+    }; 
+    var prescriptionObjectArray = new Array();  {% endcomment %}
+
+    //get patient name on id
+    function getPatientNameOnId(){
+      var patientName=null;
+      $.ajax({
+        url: "getPatientNameOnId",
+        type: "GET",
+        async: false,
+        data:{
+          
+        },
+        success: function(data){
+            var patient=JSON.parse(data.patientName);
+            for(pa in patient){
+              patientName=patient[pa].fields.patientName;
+            }
+        }
+      });
+      return patientName;
+    }
+
+    //get doctor name on id
+    function getDoctorNameOnId(doctorId){
+      var doctorName=null;
+      $.ajax({
+        url: "getDoctorNameOnId",
+        type: "GET",
+        async: false,
+        data:{
+          doctorId: doctorId
+        },
+        success: function(data){
+            var doctor=JSON.parse(data.doctorName);
+            for(pa in doctor){
+              doctorName=doctor[pa].fields.name;
+            }
+        }
+      });
+      return doctorName;
+    }
+
+    //get medicine on id
+    function getMedicineNameOnId(medicineId){
+      var medicineName=null;
+      $.ajax({
+        url: "getMedicineOnId",
+        type: "GET",
+        async: false,
+        data:{
+          medicineId: medicineId
+        },
+        success: function(data){
+          var jsonData = JSON.parse(data.medicine)
+          for(me in jsonData){
+            medicineName=jsonData[me].fields.medicineName
+          }
+        }
+      });
+      return medicineName;
+    }
+
+    //click method for prescriptionViewButton
+    function onClickForPrescriptionViewButton(id){
+        $("#prescriptionViewTabel").empty();
+        $("#prescriptionViewTabel").append("<tr><th>Medicine</th><th>Frequency</th><th>Duration</th><th class='text-center'>Action</th></tr>")
+        console.log("view click: "+id)
+            var prescriptionId= id;
+            var prescriptionMedicines=getPrescriptionMedicineOnId(prescriptionId);
+            for(pa in prescriptionMedicines){
+              console.log(prescriptionMedicines[pa].fields.prescribedMedicineFrequancy)
+              var medicineName=getMedicineNameOnId(prescriptionMedicines[pa].fields.prescribedMedicineMedicine);
+              var medicineFrequancy = prescriptionMedicines[pa].fields.prescribedMedicineFrequancy;
+              var duration = prescriptionMedicines[pa].fields.prescribedMedicineDuration;
+              var prescribedMedicineId = prescriptionMedicines[pa].pk
+              addMedicineInPrescriptionViewTabel(prescribedMedicineId,medicineName,medicineFrequancy,duration);
+
+            }
+    }
+
+    //add prescription medicine in prescriptionViewTabel
+    function addMedicineInPrescriptionViewTabel(prescribedMedicineId,medicineName,medicineFrequancy,duration){
+      $("#prescriptionViewTabel").append("<tr><td>"+medicineName+"</td><td>"+medicineFrequancy+"</td><td>"+duration+"</td><td class='text-center'><a id='"+prescribedMedicineId+"' class='btn btn-info btn-xs' href='#'><span class='glyphicon glyphicon-edit'></span> Details</a></td></tr>")
+
+    }
+
+    function getPrescriptionMedicineOnId(prescriptionId){
+      var prescriptionMedicines=null;
+      $.ajax({
+        url: "getPrescriptionMedicineOnId",
+        type: "GET",
+        async: false,
+        data: {
+          prescriptionId: prescriptionId
+        },
+        success: function(data){
+          prescriptionMedicines= JSON.parse(data.priscriptionMedicines)
+        }
+      });
+      return prescriptionMedicines;
+    }
+
+        $("document").ready(function(){
+          
+            
+            $.ajax({
+              url: "getPrescriptionsOnId",
+              type: "GET",
+              async: false,
+              data:{
+                
+              },
+              success: function(data){
+                
+                var jsonData= JSON.parse(data.priscriptions)
+                console.log("data"+jsonData)
+                for(da in jsonData){
+                    console.log("data:: "+jsonData[da].fields.prescriptionDoctor)
+                    
+                    var prescriptionId=jsonData[da].pk;
+                    console.log("data id: "+prescriptionId)
+                    
+                    var prescriptionIssueDate=jsonData[da].fields.prescriptionIssueDate;
+                    var prescriptionDoctorId=jsonData[da].fields.prescriptionDoctor;
+                    var doctorName=getDoctorNameOnId(prescriptionDoctorId);
+                    var prescriptionPatientId=jsonData[da].fields.prescriptionPatient;
+                    var patientName=getPatientNameOnId();
+                    $("#prescriptionListTabel").append("<tr><td>"+patientName+"</td><td>"+prescriptionIssueDate+"</td><td>"+doctorName+"</td><td class='text-center'><a onclick='onClickForPrescriptionViewButton(this.id)' id='"+prescriptionId+"' value='"+prescriptionId+"' class='btn btn-info btn-sm' href='#'><span class='glyphicon glyphicon-edit'></span> View</a></td></tr>") 
+                }
+
+              }
+            });
+         
+
+          
+         
+
+        });
+         
+
+    </script>
+ {% endblock content %}

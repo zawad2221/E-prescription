@@ -1,0 +1,161 @@
+ {% extends "Account/base.html" %} {% block content %}
+
+<style>
+    body {
+        background: url('static/Account/background.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    /* form container transparency */
+    
+    .myform.form {
+        margin: 0 auto;
+        opacity: .95;
+    }
+    
+    a {
+        text-decoration: none !important;
+    }
+    
+    h1,
+    h2,
+    h3 {
+        font-family: 'Kaushan Script', cursive;
+    }
+    
+    .myform {
+        position: relative;
+        display: -ms-flexbox;
+        display: flex;
+        padding: 1rem;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        width: 100%;
+        pointer-events: auto;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid rgba(0, 0, 0, .2);
+        border-radius: 1.1rem;
+        outline: 0;
+        max-width: 500px;
+    }
+    
+    .tx-tfm {
+        text-transform: uppercase;
+    }
+    
+    .mybtn {
+        border-radius: 50px;
+    }
+    
+    .login-or {
+        position: relative;
+        color: #aaa;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .span-or {
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: -2px;
+        margin-left: -25px;
+        background-color: #fff;
+        width: 50px;
+        text-align: center;
+    }
+    
+    .hr-or {
+        height: 1px;
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
+    }
+    
+    .google {
+        color: #666;
+        width: 100%;
+        height: 40px;
+        text-align: center;
+        outline: none;
+        border: 1px solid lightgrey;
+    }
+    
+    form .error {
+        color: #ff0000;
+    }
+    
+    #second {
+        display: none;
+    }
+</style>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-5 mx-auto">
+            <div id="first">
+                <div class="myform form">
+                    <div class="logo mb-3">
+                        <div class="col-md-12 text-center">
+                            <h1>E Prescription</h1>
+                        </div>
+                    </div>
+                    <form action="{% url 'login' %}" method="POST" name="login">
+                        {% csrf_token %}
+                        <div class="form-group">
+                            <label for="userType">Login As</label>
+                            <select class="form-control" required id="userType" name="userType">
+                           	<option>--Select one--</option>
+                           	<option>Patient</option>
+                           	<option>Doctor</option>
+                           	<option>Company</option>
+                           	<option>Pharmacist</option>
+                           </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="number">Mobile Number</label>
+                            <input type="number" name="number" class="form-control" id="number" aria-describedby="emailHelp" placeholder="Enter Number" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password" class="form-control" aria-describedby="emailHelp" placeholder="Enter Password" required>
+                        </div>
+
+                        <div>
+                                <div class="form-group alert alert-danger">
+                                    {% for message in messages %}
+                                   {{message}}
+                                    {% endfor %}
+                                </div>
+                            </div>
+
+                        <div class="form-group">
+                            <p class="text-center">By signing up you accept our <a href="#">Terms Of Use</a></p>
+                        </div>
+                        <div class="col-md-12 text-center ">
+                            <button type="submit" id="loginButton" class=" btn btn-block mybtn btn-primary tx-tfm">Login</button>
+                        </div>
+                        <div class="col-md-12 ">
+                            <div class="login-or">
+                                <hr class="hr-or">
+
+                            </div>
+                        </div>
+
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+{% endblock content %}

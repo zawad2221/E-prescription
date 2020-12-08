@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4bb3dfee-aa27-4ee2-845f-468216de7589" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Company/static/Company/jquery/jquery-3.4.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Company/static/Company/jquery/jquery-3.4.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Company/static/Company/jquery/jquery-3.4.1.slim.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Company/static/Company/jquery/jquery-3.4.1.slim.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Company/templates/Company/company_sold_medicine.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Patient/static/Patient/jquery/jquery-3.4.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Patient/static/Patient/jquery/jquery-3.4.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Patient/static/Patient/jquery/jquery-3.4.1.slim.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Patient/static/Patient/jquery/jquery-3.4.1.slim.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Report/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Account/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Account/migrations/0002_delete_pharmacist.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Account/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Account/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Account/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Account/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Company/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Company/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Company/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/Company/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Company/migrations/0002_auto_20191105_1955.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Company/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Company/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Company/templates/Company/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/Company/templates/Company/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Company/templates/Company/company medicine list.html" beforeDir="false" afterPath="$PROJECT_DIR$/Company/templates/Company/company medicine list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Company/templates/Company/company_add_medicine.html" beforeDir="false" afterPath="$PROJECT_DIR$/Company/templates/Company/company_add_medicine.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Company/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Company/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Company/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Company/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doctor/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/Doctor/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doctor/templates/Doctor/doctor_make_prescription.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doctor/templates/Doctor/doctor_make_prescription.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doctor/templates/Doctor/doctor_search_prescription.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doctor/templates/Doctor/doctor_search_prescription.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doctor/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Doctor/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E_Prescription/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/E_Prescription/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patient/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/Patient/migrations/0001_initial.py" afterDir="false" />
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/Patient/migrations/0002_auto_20191130_1335.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patient/migrations/0002_auto_20191130_2221.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patient/migrations/0003_auto_20191130_1422.py" beforeDir="false" />
+=======
+>>>>>>> e62f9df3ed8bef3fbed98cd72b1f59bd1345f1ff
+      <change beforePath="$PROJECT_DIR$/Patient/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Patient/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patient/templates/Patient/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/Patient/templates/Patient/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patient/templates/Patient/patient_prescription.html" beforeDir="false" afterPath="$PROJECT_DIR$/Patient/templates/Patient/patient_prescription.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patient/templates/Patient/patient_report.html" beforeDir="false" afterPath="$PROJECT_DIR$/Patient/templates/Patient/patient_report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patient/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Patient/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patient/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Patient/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pharmacist/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pharmacist/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pharmacist/migrations/0002_auto_20191107_1104.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pharmacist/migrations/0003_remove_pharmacist_pharmacistdruglicence.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pharmacist/migrations/0004_pharmacist_pharmacistdruglicence.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pharmacist/migrations/0005_auto_20191123_2005.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pharmacist/migrations/0006_auto_20191123_2011.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pharmacist/migrations/0007_auto_20191123_2017.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pharmacist/migrations/0008_order.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pharmacist/migrations/0009_medicinestock.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pharmacist/migrations/0010_remove_order_company.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pharmacist/migrations/0011_auto_20191128_1111.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pharmacist/migrations/0012_delete_order.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pharmacist/migrations/0013_order.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pharmacist/migrations/0014_auto_20191130_0034.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pharmacist/migrations/0015_auto_20191130_0104.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pharmacist/migrations/0016_soldmedicine.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pharmacist/migrations/0017_auto_20191201_0344.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pharmacist/migrations/0018_auto_20191201_0431.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pharmacist/migrations/0019_soldmedicinewithoutprescription.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pharmacist/migrations/0020_auto_20191201_2035.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pharmacist/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pharmacist/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pharmacist/templates/Pharmacist/pharmacist_medicine_stock.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pharmacist/templates/Pharmacist/pharmacist_medicine_stock.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pharmacist/templates/Pharmacist/pharmacist_my_order_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pharmacist/templates/Pharmacist/pharmacist_my_order_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pharmacist/templates/Pharmacist/pharmacist_order_medicine.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pharmacist/templates/Pharmacist/pharmacist_order_medicine.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pharmacist/templates/Pharmacist/pharmacist_sell_medicine.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pharmacist/templates/Pharmacist/pharmacist_sell_medicine.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pharmacist/templates/Pharmacist/pharmacist_sell_medicine_without_prescription.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pharmacist/templates/Pharmacist/pharmacist_sell_medicine_without_prescription.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db2.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db2.sqlite3" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1T1xH4rt07Kzf1WxvJ056UY4eMk" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task id="LOCAL-00001" summary="database">
+      <created>1572643256178</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1572643256179</updated>
+    </task>
+    <task id="LOCAL-00002" summary="database 2">
+      <created>1572643707908</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1572643707908</updated>
+    </task>
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4bb3dfee-aa27-4ee2-845f-468216de7589" name="Default Changelist" comment="" />
+      <created>1572763908418</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1572763908418</updated>
+    </task>
+    <task id="LOCAL-00003" summary="patient added">
+      <created>1572976684695</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1572976684695</updated>
+    </task>
+    <task id="LOCAL-00004" summary="pharmacist added">
+      <created>1573074702502</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1573074702502</updated>
+    </task>
+    <task id="LOCAL-00005" summary="company medicine list">
+      <created>1573286551750</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1573286551750</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="database" />
+    <MESSAGE value="database 2" />
+    <MESSAGE value="patient added" />
+    <MESSAGE value="pharmacist added" />
+    <MESSAGE value="company medicine list" />
+    <MESSAGE value="doctor and patient complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="doctor and patient complete" />
+  </component>
+</project>
