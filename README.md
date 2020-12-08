@@ -1,12 +1,9 @@
 # E-prescription
 
 ### Project Screenshot 
- * Doctor create prescription 
-<img src="Picture/doctor_make_prescripiton.png" alt="Screen"/>
- * Doctor search prescription 
-<img src="Picture/doctor_search_prescription.png" alt="Screen"/>
- * Patient check prescription 
-<img src="Picture/patient_see_prescription.png" alt="Screen"/>
+ * Doctor create prescription <img src="Picture/doctor_make_prescripiton.png" alt="Screen"/>
+ * Doctor search prescription <img src="Picture/doctor_search_prescription.png" alt="Screen"/>
+ * Patient check prescription <img src="Picture/patient_see_prescription.png" alt="Screen"/>
 
 ## Objective
 1. will be able to collect information about those who are selling medicine without prescription
