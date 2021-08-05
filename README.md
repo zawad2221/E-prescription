@@ -1,5 +1,10 @@
 # E-prescription
-
+### Run the project
+  * install djanog
+  * run 'python manage.py makemigrations'
+  * run 'python manage.py migrate'
+  * run 'python manage.py runserver'
+  * run 'python manage.py createsuperuser' to create super admin
 ### Project Screenshot 
  * Doctor create prescription <img src="Picture/doctor_make_prescripiton.png" alt="Screen"/>
  * Doctor search prescription <img src="Picture/doctor_search_prescription.png" alt="Screen"/>
