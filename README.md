@@ -1,6 +1,6 @@
 # E-prescription
 ### Run the project
-  * install djanog
+  * install django
   * run 'python manage.py makemigrations'
   * run 'python manage.py migrate'
   * run 'python manage.py runserver'
